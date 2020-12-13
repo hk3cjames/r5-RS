@@ -105,17 +105,14 @@
 
 <body>
     <div class="top1">
-
+        <div>
+            <h4>0.1S sync</h4>
+            <h1 id="sync">2</h1>
+        </div>
         <div>
             <h4>cycle </h4>
-            <h1 id="count">123456</h1>
+            <h1 id="count">100000000000023456</h1>
         </div>
-        <div>
-            <h4>0.1S </h4>
-            <h4>sync</h4>
-            <h3 id="sync">2</h3>
-        </div>
-
         <div>
             <h4>time</h4>
             <h3 id="time">23:23:45</h3>
@@ -125,17 +122,17 @@
         <div id="dbC">
             <h2>RS1 summary output</h2>
             <h4>input total</h4>
-            <h3>12345678</h3>
+            <h3>10000000000002345678</h3>
             <h4>input current cycle</h4>
-            <h3>1234</h3>
+            <h3>100000000000023456</h3>
             <h4>input DB hash (DB-C) leading 16 digits</h4>
-            <h3>1234567890abcdef</h3>
+            <h3>1234567890abcdef1234567890abcdef</h3>
             <h4>query total</h4>
             <h3>12345678</h3>
             <h4>query current cycle</h4>
             <h3>12345</h3>
             <h4>query DB hash (DB-T) leading 16 digits</h4>
-            <h3>1234567890abcdef</h3>
+            <h3>1234567890abcdef1234567890abcdef</h3>
         </div>
         <div id="dbT">
             <h2>Input servers (DB-C) </h2>
@@ -143,7 +140,7 @@
                 <div>
                     <h4> DB-C-0</h5>
                         <h5>input total</h5>
-                        <h6>12345 </h6>
+                        <h6>10000000000002345678</h6>
                         <h5>input current cycle</h5>
                         <h6>12345678</h6>
                         <h5>input hash</h5>
@@ -152,13 +149,13 @@
                 <div>
                     <h4> DB-C-1</h5>
                         <h5>input total</h5>
-                        <h6>12345 </h6>
+                        <h6>10000000000002345678</h6>
                         <h5>input current cycle</h5>
                         <h6>12345678</h6>
                         <h5>input hash</h5>
                         <h6>01234567890abcdef</h6>
                 </div>
-                <div>
+                <!-- <div>
                     <h4> DB-C-2</h5>
                         <h5>input total</h5>
                         <h6>12345 </h6>
@@ -175,25 +172,25 @@
                         <h6>12345678</h6>
                         <h5>input hash</h5>
                         <h6>01234567890abcdef</h6>
-                </div>                
+                </div>                 -->
             </div>
         </div>
         <div id="dbT">
             <h2>Query servers (DB-T) </h2>
             <div class="top11">
                 <div>
-                    <h4> DB-T-0</h5>
+                    <h4> DB-T-current</h5>
                         <h5>query total</h5>
-                        <h6>12345 </h6>
+                        <h6>10000000000002345 </h6>
                         <h5>query current cycle</h5>
                         <h6>12345678</h6>
                         <h5>query hash</h5>
                         <h6>01234567890abcdef</h6>
                 </div>
                 <div>
-                    <h4> DB-T-1</h5>
+                    <h4> DB-T-(in 1000 tick json)</h5>
                         <h5>query total</h5>
-                        <h6>12345 </h6>
+                        <h6>10000000000002345678</h6>
                         <h5>query current cycle</h5>
                         <h6>12345678</h6>
                         <h5>query hash</h5>

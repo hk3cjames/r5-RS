@@ -1,12 +1,15 @@
-tick = 0;
+tick = 10000000000;
 state = 0;
 syncSpeed = 5;
+var syncDisp = ['^.........', '.^........', '..^.......', '...^......', '....^.....',
+  '.....^....', '......^...', '.......^..', '........^.', '.........^']
 
 async function intervalFunc() {
   const ms = Date.now()
   var str = "" + ms;
   var test = str.substring(10, 11);
-  document.getElementById("sync").textContent = test;
+
+  document.getElementById("sync").textContent = syncDisp[test]
   switch (state) {
     case 0:
       if (test == 5) {
